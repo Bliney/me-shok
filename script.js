@@ -4,6 +4,7 @@ let popup = document.getElementById("popup")
 let restart = document.getElementById("restart");
 let piketELojtarit1 = document.getElementById("piketELojtarit1");
 let piketELojtarit2 = document.getElementById("piketELojtarit2");
+let back = document.getElementById("goback");
 
 let Piket1 = 0;
 let Piket2 = 0;
@@ -103,4 +104,9 @@ function numeroPiket(){
     Piket2 += 1;
     piketELojtarit2.innerHTML = Piket2
   }
+}
+back.addEventListener('click', ShkoMain)
+
+function ShkoMain() {
+  window.open("https://tictactoemainsite.netlify.app/")
 }
